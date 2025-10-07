@@ -27,7 +27,7 @@ def get_weather(city):
       'http': '',
       'https': '',
     }  
-    app_key = '517ce200b93aa5d81c4c6076acd6ce99'
+    app_key = 'Your API KEY'
     url = 'https://api.openweathermap.org/data/2.5/weather'
     params= {'APPID':app_key, 'q':city, 'units':'metric'}
     response= requests.get(url, params=params, proxies=proxies)
